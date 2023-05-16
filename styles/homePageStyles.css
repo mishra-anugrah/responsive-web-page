@@ -1,0 +1,232 @@
+/* Outer container */
+.container-fluid {
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #E63946;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.navigation-logo {
+    max-height: 50px;
+}
+
+.nav-item:hover {
+    color: #000;
+}
+
+.nav-link:hover {
+    padding-top: 30%;
+    background-color: #F1FAEE;
+    color: #000000;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url('https://kinsta.com/wp-content/uploads/2020/04/code-review-tools-1024x512.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: calc(100vh - 25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 10em;
+    margin: 0;
+}
+
+.jumbotron-overlay-1 {
+    height: 110%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    background-color: #000;
+    z-index: 1;
+}
+
+.jumbotron-overlay-2 {
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: #000;
+    z-index: 4
+}
+
+.jumbotron-contents {
+    z-index: 2;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+.jumbotron-head {
+    font-size: 50px;
+    font-weight: 550;
+    text-decoration: underline overline;
+    font-family: 'Goldman', cursive;
+}
+
+.jumbotron-lead {
+    font-family: 'Goldman', cursive;
+    font-size: 15px;
+    margin-bottom: 2em;
+}
+
+.page-body {
+    background-color: #000;
+}
+
+.banner {
+    margin: 0;
+    padding: 10em 0;
+}
+
+.banner-coming-soon {
+    padding: 5em 0;
+    color:rgb(86, 87, 87)
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-head {
+    font-family: 'Goldman', cursive;
+}
+
+.banner-lead {
+    padding: 2em 1em;
+    text-align: justify;
+    font-size: x-large;
+}
+
+.banner-image-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-image {
+    height: auto;
+    width: 100%;
+    
+}
+
+/* Footer */
+.footer {
+    height: fit-content;
+    /* background-color: #003049; */
+    background-color: rgb(17, 17, 20);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-large {
+    background-color:rgb(39, 39, 39) ;
+    padding: 1em 2em;
+}
+
+.footer-logo {
+    height: 3em;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-link {
+    color: rgb(86, 87, 87);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color:rgb(156, 156, 179);
+    text-decoration: none;
+}
+
+.footer-head {
+    text-decoration: underline;
+}
+
+.social-icon {
+    height: 1.5em;
+    margin: 0.2em;
+}
+
+.social-icon:hover {
+    height: 2em;
+    margin: 0.4em;
+    transition-duration: 0.4s;
+}
+
+.social-list li {
+    display: inline;
+}
+
+.fooer-strip {
+    padding: 2em 0;
+}
+
+.img-copyright {
+    height: 15px;
+    padding: 0 5px 3px 5px;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+
+    .jumbotron-head {
+        font-size: 60px;
+    }
+
+    .jumbotron-lead {
+        font-size: 25px;
+        margin-bottom: 2em;
+    }
+
+    .page-body {
+        padding-top: 3em;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+    	padding: 2em 0;
+    }
+    
+    .banner-image-div {
+        order: 1;
+    }
+
+    .banner-content {
+        order: 2;
+    }
+
+    .banner-image-div {
+        height: 60%;
+        width: 60%;
+        margin: 2em auto;   
+    }
+
+    .banner-head {
+        font-size: 2.5em;
+    }
+}
